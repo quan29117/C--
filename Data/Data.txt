@@ -1,0 +1,7 @@
+Dang Minh Quan;Nam;18;22021153;9;9.25;9
+Nguyen Hoang Nhi;Nu;18;17014614;9.2;9.25;9
+Ngo Nguyen Gia Khanh;Nam;18;23456789;9.2;8.5;9
+Ngo Huyen Trang;Nu;18;2214450619;9.4;9.25;9
+Do Ba Duy;Nam;18;he186187;9;8.75;9
+Luong Trung Tan;Nam;20;818937947;9;9;9
+Le Ba Nhat Quang;Nam;20;EEACIU20078;9;9.25;9
