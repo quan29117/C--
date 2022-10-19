@@ -1,4 +1,10 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<sstream>
+#include<string>
+#include<fstream>
+#include<algorithm>
+
 using namespace std;
 
 #define for(i,a,b) for(unsigned int i=a; i<b;i++)

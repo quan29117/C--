@@ -1,25 +1,15 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<iostream>
+#include<vector>
+#include<iterator>
 
 int main()
 {
-    int myint [] = {3,9,5,36,222,145,65};
-		set <int> A (myint, myint + 5);
-    cout<<"Set A truoc khi thao tac: ";
-    for (const auto &x: A)
-        cout<<x<<" ";
-    int n=0, index=2;
-    for (auto &x: A)
-    {
-        if (n==index)
-        {
-            A.insert(x+3);
-            A.erase(x);
-            break;
-        }
-        n++;
-    }
-    cout<<"\nSet A sau khi thao tac: ";
-    for (const auto &x: A)
-        cout<<x<<" ";
+    std::vector<int> A,B;
+    std::vector<int>::iterator iter,iter1;
+    A ={1,2,3,4,5};
+    B ={10,20,30,40,50};
+    iter =B.begin()+3;
+    std::copy (A.begin(), A.end(),std::inserter(B,iter));
+    for(iter1 = B.begin(); iter1!=B.end();iter1++)
+        std::cout<<*iter1<<" ";
 }
