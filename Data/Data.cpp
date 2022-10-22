@@ -38,7 +38,7 @@ int main()
     bool kt=true;
     while (kt==true)
     {
-        system("cls");
+        // system("cls");
         cout<<"Danh sach thao tac: \n1 - In danh sach sinh vien\n2 - Them sinh vien\n3 - Sua thong tin\n4 - Xoa sinh vien\n5 - Tim kiem";
         cout<<"\n6 - Sap xep\n7 - Thong ke\n8 - Sao luu\n9 - Thoat";
         cout<<"\nNhap lenh: ";
@@ -130,7 +130,7 @@ void Cut_name(Student &s)
 void input(vector <Student> &A)
 {
     ifstream file;
-    file.open("Data.txt", ios::in | ios::app);
+    file.open("./Data/Data.txt", ios::in | ios::app);
     Student tmp;
     string line;
     while(getline(file,line))
@@ -144,11 +144,11 @@ void input(vector <Student> &A)
                 tmp.age = string_to_no(f_number);
             getline(ss,tmp.ID,';');
             getline(ss,f_number,';');
-                tmp.Math = string_to_no(f_number);
+                tmp.Math = stod(f_number);
             getline(ss,f_number,';');
-                tmp.Phys = string_to_no(f_number);
+                tmp.Phys = stod(f_number);
             getline(ss,f_number,';');
-                tmp.IT = string_to_no(f_number);
+                tmp.IT = stod(f_number);
             A.push_back(tmp); 
             Tinh_AV(A[A.size()-1]);
             Cut_name(A[A.size()-1]);
@@ -511,7 +511,7 @@ void save()
 {
     cout<<"[8] Luu thong tin:\n";
     ofstream file;
-    file.open("Data.txt", ios::out);
+    file.open("./Data/Data.txt", ios::out);
     for (i,0,A.size()) 
      file<<A[i].fullname<<";"<<A[i].gender<<";"<<A[i].age<<";"<<A[i].ID<<";"<<A[i].Math<<";"<<A[i].Phys<<";"<<A[i].IT<<(i!=A.size()-1 ? "\n" : "");
     cout<<"\t(!!) Dang luu du lieu";
