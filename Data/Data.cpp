@@ -50,48 +50,56 @@ int main()
                         system("cls");
                         print_student();
                         system("pause");
+                        system("cls");
                         break;
                     }
             case '2': {
                         system("cls");
                         add_student();
                         system("pause");
+                        system("cls");
                         break;
                     }           
             case '3': {
                         system("cls");
                         edit_student();
-                        system("pause");               
+                        system("pause");
+                        system("cls");               
                         break;
                     }
             case '4': {
                         system("cls");
                         delete_student();
-                        system("pause");                        
+                        system("pause");
+                        system("cls");                        
                         break;
                     }
             case '5': {
                         system("cls");
                         search_student();
-                        system("pause");                        
+                        system("pause");
+                        system("cls");                        
                         break;
                     }
             case '6': {
                         system("cls");
                         sort_student();
-                        system("pause");                        
+                        system("pause");
+                        system("cls");                        
                         break;
                     }
             case '7': {
                         system("cls");
                         statistic_student();
-                        system("pause");                        
+                        system("pause");
+                        system("cls");                        
                         break;
                     }
             case '8': {
                         system("cls");                
                         save();                        
                         system("pause");
+                        system("cls");
                         break;
                     }
             case '9': {
@@ -130,7 +138,7 @@ void Cut_name(Student &s)
 void input(vector <Student> &A)
 {
     ifstream file;
-    file.open("./Data/Data.txt", ios::in | ios::app);
+    file.open("../Data/Data.txt", ios::in | ios::app);
     Student tmp;
     string line;
     while(getline(file,line))
@@ -511,7 +519,7 @@ void save()
 {
     cout<<"[8] Luu thong tin:\n";
     ofstream file;
-    file.open("./Data/Data.txt", ios::out);
+    file.open("../Data/Data.txt", ios::out);
     for (i,0,A.size()) 
      file<<A[i].fullname<<";"<<A[i].gender<<";"<<A[i].age<<";"<<A[i].ID<<";"<<A[i].Math<<";"<<A[i].Phys<<";"<<A[i].IT<<(i!=A.size()-1 ? "\n" : "");
     cout<<"\t(!!) Dang luu du lieu";

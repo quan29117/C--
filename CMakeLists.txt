@@ -16,7 +16,7 @@ add_executable(Meo1
 )
 
 add_executable(Meo2
-    ./src/22-10.cpp
+    ./src/Test.cpp
     ${HEADERS}
     ${SOURCES}
 )
