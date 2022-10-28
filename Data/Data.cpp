@@ -38,7 +38,7 @@ int main()
     bool kt=true;
     while (kt==true)
     {
-        // system("cls");
+        system("cls");
         cout<<"Danh sach thao tac: \n1 - In danh sach sinh vien\n2 - Them sinh vien\n3 - Sua thong tin\n4 - Xoa sinh vien\n5 - Tim kiem";
         cout<<"\n6 - Sap xep\n7 - Thong ke\n8 - Sao luu\n9 - Thoat";
         cout<<"\nNhap lenh: ";
@@ -50,56 +50,48 @@ int main()
                         system("cls");
                         print_student();
                         system("pause");
-                        system("cls");
                         break;
                     }
             case '2': {
                         system("cls");
                         add_student();
                         system("pause");
-                        system("cls");
                         break;
                     }           
             case '3': {
                         system("cls");
                         edit_student();
-                        system("pause");
-                        system("cls");               
+                        system("pause");              
                         break;
                     }
             case '4': {
                         system("cls");
                         delete_student();
-                        system("pause");
-                        system("cls");                        
+                        system("pause");                      
                         break;
                     }
             case '5': {
                         system("cls");
                         search_student();
-                        system("pause");
-                        system("cls");                        
+                        system("pause");                      
                         break;
                     }
             case '6': {
                         system("cls");
                         sort_student();
-                        system("pause");
-                        system("cls");                        
+                        system("pause");                      
                         break;
                     }
             case '7': {
                         system("cls");
                         statistic_student();
-                        system("pause");
-                        system("cls");                        
+                        system("pause");                    
                         break;
                     }
             case '8': {
                         system("cls");                
                         save();                        
                         system("pause");
-                        system("cls");
                         break;
                     }
             case '9': {

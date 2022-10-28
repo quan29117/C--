@@ -15,10 +15,14 @@ add_executable(Meo1
     ${SOURCES}
 )
 
-add_executable(Meo2
+add_executable(Test
     ./src/Test.cpp
     ${HEADERS}
     ${SOURCES}
+)
+
+add_executable(Hoc
+    ./src/Danh_sach_lien_ket_don.cpp
 )
 
 add_executable(Data
@@ -26,4 +30,4 @@ add_executable(Data
 )   
 
 target_include_directories(Meo1 PUBLIC include)
-target_include_directories(Meo2 PUBLIC include)
+target_include_directories(Test PUBLIC include)

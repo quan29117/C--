@@ -3,7 +3,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
-
+#include <conio.h>
 int main () {
          
         // std::vector <int> *A = new std::vector <int>;
@@ -12,8 +12,7 @@ int main () {
         // for (it =A->begin(); it!=A->end();it++)
         //         std::cout<<(*it)<<" ";
         
-        std::cout<<char (219);
-        std::cout<<char (219);
+        std::cout<<char (getch());
         return 0;
         
 }
