@@ -27,7 +27,11 @@ add_executable(Hoc
 
 add_executable(Data
     ./Data/Data.cpp
-)   
+)
+
+add_executable(Rua_Tho
+    ./src/Rua_va_Tho.cpp
+)
 
 target_include_directories(Meo1 PUBLIC include)
 target_include_directories(Test PUBLIC include)

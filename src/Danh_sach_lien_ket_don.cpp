@@ -192,43 +192,37 @@ void Delete_after(List&list, const int &value)
 //xóa 1 node ở 1 vị trí
 void Delete_pos(List &list, const int &pos)
 {
-    if (count==0) 
+    if (count == 0) 
     {
-        std::cout<<"Danh sach khong co phan tu";
+        std::cout<<"Danh sach khong co phan tu!";
         return;
     }
-    if (count==1)
-    {
-        Khoi_tao(list);
-        count=0;
-        return;
-    }
-    if (pos==1)
+    if (pos == 1)
     {
         Delete_head(list);
         return;
     }
-    if (pos==count)
+    if (pos ==count)
     {
         Delete_tail(list);
         return;
     }
-
-    int count_for_pos=1;
-    Node *temp = list.pHead;
-    for(Node *i = list.pHead->pNext; i!=nullptr; i = i->pNext)
+    int count_for_pos = 1;
+    Node *i = list.pHead->pNext;
+    Node *g = list.pHead;
+    while (i!=nullptr)
     {
         count_for_pos++;
         if (count_for_pos == pos)
         {
-            Node *del = i;
-            temp->pNext = i->pNext;
-            delete del;
+            Node *k = i;
+            g->pNext = i->pNext;
+            delete k;
             break;
         }
-        temp = i;
+        g = i;
+        i = i->pNext;
     }
-    count--;
 }
 
 //in danh sách
@@ -238,6 +232,17 @@ void Print_list(List list)
         std::cout<<i->data<<" "; //xuất data
 }
 
+//giải phóng bộ nhớ
+void Giai_phong(List &list)
+{
+    Node *i = new Node;
+    while(list.pHead != nullptr)
+    {
+        i = list.pHead;
+        list.pHead = list.pHead->pNext;
+        delete i;
+    }
+}
 
 int main()
 {
@@ -262,7 +267,7 @@ int main()
     Delete_pos(l,x);
     std::cout<<"\nDanh sach lien ket: ";
     Print_list(l);
-
+    Giai_phong(l);
     return 0;
 }
 
