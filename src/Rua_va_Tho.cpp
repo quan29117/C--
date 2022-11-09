@@ -60,7 +60,7 @@ int main()
     while (char (getch()) == 'Y'  || char (getch()) =='y');
     
     //tổng kết
-    std::cout<<"Tong ket: \n\t(!)So lan rua thang: "<<So_lan_Rua_thang;
+    std::cout<<"\nTong ket: \n\t(!)So lan rua thang: "<<So_lan_Rua_thang;
     std::cout<<"\n\t(!)So lan tho thang: "<<So_lan_Tho_thang;
     std::cout<<"\n\t(!)So lan hoa: "<<So_lan_Hoa;
     std::cout<<"\n\t(!)Tong so tran dau: "<<So_tran_dau;

@@ -23,17 +23,20 @@ int main () {
         
         // //std::cout<<char (getch());
         // system("pause");
-        std::string ho_ten;
-        int so_nguyen;
-        double so_thuc;
-        std::ifstream FILE;
-        FILE.open("../txt/test.txt", std::ios::in | std::ios::app);
-        std::stringstream ss;
-        getline(FILE,ho_ten,',');
-        FILE>>so_nguyen;
-        FILE>>so_thuc;
+        // std::string ho_ten;
+        // int so_nguyen;
+        // double so_thuc;
+        // std::ifstream FILE;
+        // FILE.open("../txt/test.txt", std::ios::in | std::ios::app);
+        // std::stringstream ss;
+        // getline(FILE,ho_ten,',');
+        // FILE>>so_nguyen;
+        // FILE>>so_thuc;
         
-        std::cout<<so_thuc;
+        //std::cout<<so_thuc;
+        char ch;
+        std::cin>>ch;
+        std::cout<<char(ch-32);
         return 0;
         
 }
