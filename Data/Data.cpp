@@ -274,7 +274,7 @@ void edit_student()
     cout<<"\t(??) Ban muon sua thong tin cua ai: \n";
     for(i,0,A.size())
         cout<<"\t     "<<i+1<<". "<<A[i].fullname<<" - ID: "<<A[i].ID<<"\n";
-    cout<<"\t(>>) Sua thong tin so: "; 
+    cout<<"\t(>>) Sua thong tin so: ";
     short key_edit1;
     cin>>key_edit1;
     edit_s(A[key_edit1-1]);

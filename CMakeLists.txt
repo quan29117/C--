@@ -10,7 +10,7 @@ set(SOURCES
 )
 
 add_executable(Meo1
-    ./src/21-10.cpp
+    ./src/18-10.cpp
     ${HEADERS}
     ${SOURCES}
 )
@@ -39,6 +39,10 @@ add_executable(Class
 
 add_executable(Temp
     ./src/Temp.cpp
+)
+
+add_executable(OOP
+    ./src/OOP.cpp
 )
 
 target_include_directories(Meo1 PUBLIC include)
